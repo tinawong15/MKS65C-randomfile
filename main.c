@@ -24,8 +24,6 @@ int main() {
 
   printf("Writing numbers to file...\n");
   int file = open("text.txt", O_WRONLY);
-  // printf("%d\n", file);
-  // write(file, a, 10 * sizeof(int));
   printf("Bytes written: %zd\n", write(file, a, 10 * sizeof(int)));
   close(file);
 
